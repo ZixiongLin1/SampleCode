@@ -55,7 +55,7 @@ def neg_log_likelihood(data, theta, beta):
 
 
 def log_likelihood_3pl(data, theta, beta, c, k):
-    """ Compute the log-likelihood.
+    """ Compute the log-likelihood for the 3pl-irt.
     
     :param data: A dictionary {user_id: list, question_id: list,
     is_correct: list}
@@ -76,7 +76,7 @@ def log_likelihood_3pl(data, theta, beta, c, k):
 
 
 def neg_log_likelihood_3pl(data, theta, beta, c, k):
-    """ Compute the negative log-likelihood.
+    """ Compute the negative log-likelihood for the 3pl-irt.
 
     You may optionally replace the function arguments to receive a matrix.
 
@@ -134,7 +134,7 @@ def update_theta_beta(data, lr, theta, beta):
     return theta, beta
 
 def update_theta_beta_3pl(data, lr, theta, beta, c, k):
-    """ Update theta and beta using gradient descent.
+    """ Update theta and beta using gradient descent for 3pl-irt.
 
     You are using alternating gradient descent. Your update should look:
     for i in iterations ...
